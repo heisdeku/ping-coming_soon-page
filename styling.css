@@ -1,0 +1,215 @@
+:root {
+    --blue: hsl(223, 87%, 63%);
+    --pale-blue: hsl(223, 100%, 88%);
+    --light-red: hsl(354, 100% 66%);
+    --gray: hsl(0, 0%, 59%);
+    --very-dark-blue: hsl(209, 33%, 12%);
+    --light: 300;
+    --basic: 600;
+    --thick: 700;
+}
+
+@font-face {
+    font-family: 'Libre Franklin';
+    src: url(./fonts/LibreFranklin-Regular.ttf);
+}
+
+body {
+    margin-top: 10px;
+    margin-left: 15px;
+    font-family: 'Libre Franklin'
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 2px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    float: right;
+}
+
+.heading-element {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin-top: 25px;
+}
+
+@media screen and (min-width: 1440px) {}
+
+.logo {
+    width: 46px;
+}
+
+h2 {
+    padding-top: 14px;
+    font-size: 20px;
+    width: 280px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.dim {
+    color: var(--gray);
+    font-weight: var(--light);
+}
+
+.just-bold {
+    font-size: 21px;
+    color: var(--very-dark-blue);
+    font-weight: bold;
+}
+
+p {
+    font-size: 11px;
+    margin-top: -4px;
+    width: 150px;
+    text-align: center;
+}
+
+#wrap {
+    position: relative;
+    bottom: 20px;
+    margin: 40px 2px 10px 2px;
+}
+
+@media screen and (min-width: 850px) and (max-width: 1440px) {
+    #wrap {
+        width: 60vw;
+    }
+    .input-form {
+        display: flex;
+        flex-flow: row wrap;
+        width: 100;
+    }
+}
+
+.input-form {
+    display: flex;
+    flex-flow: column wrap;
+    flex: 2;
+    padding-bottom: 10px;
+    padding-right: 14px;
+    padding-left: 14px;
+}
+
+input[type="email"] {
+    border: 1px solid var(--pale-blue);
+    border-radius: 20px;
+    height: 30px;
+    padding-left: 30px;
+    font-size: 14px;
+    color: var(--gray);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+input::placeholder {
+    color: var(--gray);
+    font: 'Libre Franklin';
+}
+
+.btn {
+    margin-top: 14px;
+    background-color: var(--blue);
+    color: white;
+}
+
+button {
+    border-radius: 18px;
+    border: 1px solid var(--blue);
+    height: 34px;
+    font-size: 12px;
+    font-weight: var(--light);
+    text-align: center;
+    box-shadow: 6px 6px 7px var(--gray);
+}
+
+.imaging {
+    margin-top: 25px;
+    padding-top: 20px;
+}
+
+.dashboard-image {
+    width: 100%;
+}
+
+.listing {
+    display: inline;
+    margin: 35px 16px 10px 16px;
+}
+
+#list-container {
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 40px;
+}
+
+.list-items {
+    margin: 0px 0px 0px 10px;
+}
+
+li {
+    list-style-type: none;
+    display: inline;
+}
+
+.list-items img {
+    border-radius: 50%;
+    border: 0.5px solid var(--pale-blue);
+    height: 13px;
+    width: 11px;
+    padding: 7px 8px 7px 8px;
+}
+
+.copyright {
+    color: var(--gray);
+    font-size: 10px;
+    width: 240px;
+    margin: -20px 0 -16px 29px;
+}
+
+@media screen and (min-width: 870px) {
+    body {
+        width: 1440px;
+    }
+    #container {
+        display: flex;
+        margin: 2% 20% 2% 20%;
+    }
+    .heading-element {
+        margin-top: 20px;
+    }
+    h2 {
+        padding-top: 15px;
+        font-size: 40px;
+        width: 700px;
+        margin-bottom: 19px;
+    }
+    .logo {
+        width: 76px;
+    }
+    .just-bold {
+        font-size: 41px;
+    }
+    p {
+        padding-top: -20px;
+        font-size: 18px;
+        width: 450px;
+    }
+    input[type="email"] {
+        width: 450px;
+        height: 40px;
+    }
+    button {
+        width: 120px;
+    }
+    .dashboard-image {
+        height: 50vh;
+    }
+}
